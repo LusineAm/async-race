@@ -1,0 +1,46 @@
+.table {
+  &__head {
+    border: 0.1rem solid var(--main-text);
+    text-align: left;
+    padding: 8rem;
+    width: 20%;
+  }
+
+  &__row:nth-child(even) {
+    background-color: var(--table-row);
+  }
+
+  &__header {
+    border: 0.1rem solid var(--main-text);
+    background-color: var(--dark-l);
+    padding: 2rem 0.8rem;
+  }
+
+  &__sort {
+    cursor: pointer;
+    position: relative;
+
+    &--asc {
+      &::after {
+        position: absolute;
+        content: '^';
+        transform: rotate(180deg);
+        width: 2rem;
+        height: 2rem;
+        color: var(--main-text);
+        right: 1rem;
+      }
+    }
+
+    &--desc {
+      &::after {
+        position: absolute;
+        content: '^';
+        width: 2rem;
+        height: 2rem;
+        color: var(--main-text);
+        right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.controls {
+  &__create,
+  &__update {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    height: 3.5rem;
+  }
+
+  &__race {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
